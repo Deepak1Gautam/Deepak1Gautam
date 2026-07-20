@@ -1,1 +1,173 @@
 
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.5" stop-color="#0B1026"/>
+      <stop offset="1" stop-color="#160A25"/>
+    </linearGradient>
+
+    <linearGradient id="titleGradient" x1="250" y1="250" x2="950" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7">
+        <animate attributeName="stop-color" values="#A855F7;#EC4899;#22D3EE;#A855F7" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#EC4899">
+        <animate attributeName="stop-color" values="#EC4899;#22D3EE;#A855F7;#EC4899" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#A855F7;#EC4899;#22D3EE" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="orbPurple">
+      <stop stop-color="#A855F7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbPink">
+      <stop stop-color="#EC4899" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowPurple">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#8B5CF6" stroke-opacity="0.08"/>
+    </pattern>
+
+    <style>
+      .mono { font-family: 'Courier New', monospace; }
+      .sans { font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+
+  <!-- Ambient Orbs -->
+  <circle cx="170" cy="120" r="180" fill="url(#orbPurple)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="170;260;170" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="120;180;120" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1050" cy="400" r="220" fill="url(#orbPink)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="1050;940;1050" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stars -->
+  <g fill="#FFFFFF">
+    <circle cx="80" cy="70" r="2">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="310" cy="60" r="1.5">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="80" r="2">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1090" cy="120" r="1.5">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="960" cy="260" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floating Particles -->
+  <g fill="#22D3EE">
+    <circle cx="130" cy="350" r="3">
+      <animate attributeName="cy" values="350;300;350" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="300" r="3">
+      <animate attributeName="cy" values="300;250;300" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="450" r="2">
+      <animate attributeName="cy" values="450;410;450" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Terminal -->
+  <rect x="80" y="62" width="1040" height="48" rx="12" fill="#090D1C" stroke="#A855F7" stroke-opacity="0.45"/>
+
+  <circle cx="105" cy="86" r="6" fill="#EC4899"/>
+  <circle cx="125" cy="86" r="6" fill="#FBBF24"/>
+  <circle cx="145" cy="86" r="6" fill="#22D3EE"/>
+
+  <text x="180" y="92" fill="#A7F3D0" font-size="18" class="mono">
+    deepak@github:~$ cat README.md
+  </text>
+
+  <text x="825" y="92" fill="#22D3EE" font-size="18" class="mono">
+    ▌
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main Name -->
+  <text x="600" y="205" text-anchor="middle" fill="url(#titleGradient)" font-size="68" font-weight="700" class="sans">
+    Deepak Gautam
+  </text>
+
+  <!-- Role -->
+  <text x="600" y="250" text-anchor="middle" fill="#CBD5E1" font-size="21" class="mono">
+    &gt; B.Tech Computer Engineering Student
+  </text>
+
+  <text x="600" y="282" text-anchor="middle" fill="#CBD5E1" font-size="21" class="mono">
+    &gt; Full-Stack Web Developer
+  </text>
+
+  <!-- Cycling Role Indicator -->
+  <text x="600" y="320" text-anchor="middle" fill="#22D3EE" font-size="18" class="mono">
+    [ NEXT.JS DEVELOPER ]
+    <animate attributeName="opacity" values="1;0;0;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="600" y="320" text-anchor="middle" fill="#EC4899" font-size="18" class="mono" opacity="0">
+    [ PROBLEM SOLVER ]
+    <animate attributeName="opacity" values="0;0;1;0" dur="8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Tech Pills -->
+  <g class="sans" font-size="14">
+    <rect x="280" y="350" width="105" height="34" rx="17" fill="#111827" stroke="#A855F7"/>
+    <text x="332" y="372" text-anchor="middle" fill="#D8B4FE">React.js</text>
+
+    <rect x="398" y="350" width="105" height="34" rx="17" fill="#111827" stroke="#22D3EE"/>
+    <text x="450" y="372" text-anchor="middle" fill="#67E8F9">Next.js</text>
+
+    <rect x="516" y="350" width="105" height="34" rx="17" fill="#111827" stroke="#EC4899"/>
+    <text x="568" y="372" text-anchor="middle" fill="#F9A8D4">TypeScript</text>
+
+    <rect x="634" y="350" width="105" height="34" rx="17" fill="#111827" stroke="#A855F7"/>
+    <text x="686" y="372" text-anchor="middle" fill="#D8B4FE">Firebase</text>
+
+    <rect x="752" y="350" width="105" height="34" rx="17" fill="#111827" stroke="#22D3EE"/>
+    <text x="804" y="372" text-anchor="middle" fill="#67E8F9">Django</text>
+  </g>
+
+  <!-- Code Card -->
+  <rect x="300" y="410" width="600" height="58" rx="16" fill="#080B16" stroke="#A855F7" stroke-opacity="0.6"/>
+
+  <text x="330" y="445" fill="#A855F7" font-size="17" class="mono">
+    const mission =
+  </text>
+
+  <text x="500" y="445" fill="#EC4899" font-size="17" class="mono">
+    "Code. Learn. Build. Repeat.";
+  </text>
+
+  <!-- Footer Neon -->
+  <text x="600" y="500" text-anchor="middle" fill="#22D3EE" font-size="16" letter-spacing="4" class="sans">
+    KEEP CODING • KEEP GROWING
+  </text>
+</svg>

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Deepak1Gautam/Deepak1Gautam/main/assets/banner.svg?v=1" width="100%">
+</p>
+
 # 💫 About Me:
 
 I’m Deepak Gautam, a B.Tech Computer Engineering student and aspiring Software Engineer passionate about building real-world applications and solving problems through technology.<br><br>

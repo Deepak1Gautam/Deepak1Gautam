@@ -1,5 +1,3 @@
-<img src="./assets/banner.svg" width="100%" />
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/Deepak1Gautam/Deepak1Gautam/main/assets/banner.svg" width="100%">
 </p>

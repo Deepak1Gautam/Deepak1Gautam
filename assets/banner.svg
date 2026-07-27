@@ -1,0 +1,510 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#03040B"/>
+      <stop offset="0.45" stop-color="#080B1C"/>
+      <stop offset="1" stop-color="#160720"/>
+    </linearGradient>
+
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="900" y2="0">
+      <stop stop-color="#A855F7">
+        <animate attributeName="stop-color"
+          values="#A855F7;#EC4899;#22D3EE;#A855F7"
+          dur="8s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="0.5" stop-color="#EC4899">
+        <animate attributeName="stop-color"
+          values="#EC4899;#22D3EE;#A855F7;#EC4899"
+          dur="8s"
+          repeatCount="indefinite"/>
+      </stop>
+
+      <stop offset="1" stop-color="#22D3EE">
+        <animate attributeName="stop-color"
+          values="#22D3EE;#A855F7;#EC4899;#22D3EE"
+          dur="8s"
+          repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="purpleOrb">
+      <stop stop-color="#A855F7" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cyanOrb">
+      <stop stop-color="#22D3EE" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#8B5CF6" stroke-opacity="0.08"/>
+    </pattern>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+
+    <style>
+      .sans {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .mono {
+        font-family: "Courier New", monospace;
+      }
+    </style>
+
+  </defs>
+
+  <!-- BACKGROUND -->
+
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+
+  <!-- GLOWING ORBS -->
+
+  <circle cx="150" cy="150" r="220"
+    fill="url(#purpleOrb)"
+    filter="url(#softGlow)">
+
+    <animate attributeName="cx"
+      values="150;280;150"
+      dur="12s"
+      repeatCount="indefinite"/>
+
+    <animate attributeName="cy"
+      values="150;250;150"
+      dur="10s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <circle cx="1050" cy="350" r="220"
+    fill="url(#cyanOrb)"
+    filter="url(#softGlow)">
+
+    <animate attributeName="cx"
+      values="1050;920;1050"
+      dur="14s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <!-- FALLING STARS -->
+
+  <g fill="#FFFFFF" filter="url(#glow)">
+
+    <circle cx="80" cy="-20" r="3">
+      <animate attributeName="cy"
+        values="-20;540"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="180" cy="-80" r="2">
+      <animate attributeName="cy"
+        values="-80;540"
+        dur="9s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="310" cy="-30" r="2.5">
+      <animate attributeName="cy"
+        values="-30;540"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="460" cy="-100" r="2">
+      <animate attributeName="cy"
+        values="-100;540"
+        dur="8s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="650" cy="-40" r="3">
+      <animate attributeName="cy"
+        values="-40;540"
+        dur="7.5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="780" cy="-120" r="2">
+      <animate attributeName="cy"
+        values="-120;540"
+        dur="10s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="940" cy="-60" r="2.5">
+      <animate attributeName="cy"
+        values="-60;540"
+        dur="6.5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1100" cy="-100" r="3">
+      <animate attributeName="cy"
+        values="-100;540"
+        dur="8.5s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- FLOATING CODE SYMBOLS -->
+
+  <g fill="#A855F7"
+    opacity="0.65"
+    font-size="28"
+    font-weight="bold"
+    class="mono">
+
+    <text x="95" y="260">
+      &lt;/&gt;
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 -30;0 0"
+        dur="5s"
+        repeatCount="indefinite"/>
+    </text>
+
+    <text x="1030" y="190">
+      { }
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 25;0 0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </text>
+
+    <text x="240" y="440">
+      &lt;/&gt;
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;20 -20;0 0"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </text>
+
+    <text x="930" y="420">
+      &lt;&gt;
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-20 -15;0 0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </text>
+
+  </g>
+
+  <!-- TERMINAL -->
+
+  <rect
+    x="70"
+    y="48"
+    width="1060"
+    height="48"
+    rx="12"
+    fill="#080B16"
+    stroke="#A855F7"
+    stroke-opacity="0.55"/>
+
+  <circle cx="96" cy="72" r="6" fill="#EC4899"/>
+  <circle cx="116" cy="72" r="6" fill="#FBBF24"/>
+  <circle cx="136" cy="72" r="6" fill="#22D3EE"/>
+
+  <text
+    x="170"
+    y="78"
+    fill="#A7F3D0"
+    font-size="17"
+    class="mono">
+
+    deepak@github:~$ ./build_future.sh
+
+  </text>
+
+  <text
+    x="505"
+    y="78"
+    fill="#22D3EE"
+    font-size="18"
+    class="mono">
+
+    ▌
+
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="1s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <!-- MAIN CONTENT -->
+
+  <text
+    x="430"
+    y="150"
+    text-anchor="middle"
+    fill="#A855F7"
+    font-size="38"
+    font-weight="bold"
+    class="mono">
+
+    &lt;/&gt;
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0;0 -8;0 0"
+      dur="3s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <text
+    x="430"
+    y="220"
+    text-anchor="middle"
+    fill="url(#titleGradient)"
+    font-size="64"
+    font-weight="700"
+    class="sans">
+
+    Deepak Gautam
+
+  </text>
+
+  <text
+    x="430"
+    y="260"
+    text-anchor="middle"
+    fill="#E2E8F0"
+    font-size="21"
+    class="mono">
+
+    &gt; Software Engineer
+
+  </text>
+
+  <text
+    x="430"
+    y="295"
+    text-anchor="middle"
+    fill="#22D3EE"
+    font-size="16"
+    class="mono">
+
+    Building Modern Web Experiences
+
+    <animate
+      attributeName="opacity"
+      values="1;0.4;1"
+      dur="3s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <!-- SOCIALS -->
+
+  <g class="sans" font-size="16">
+
+    <text x="190" y="340" fill="#C084FC">
+      ◉ GitHub
+    </text>
+
+    <text x="335" y="340" fill="#38BDF8">
+      in LinkedIn
+    </text>
+
+    <text x="485" y="340" fill="#F0ABFC">
+      ✉ Email
+    </text>
+
+    <text x="610" y="340" fill="#22D3EE">
+      ◎ Portfolio
+    </text>
+
+  </g>
+
+  <!-- TECH PILLS -->
+
+  <g class="sans" font-size="13">
+
+    <rect x="140" y="375" width="100" height="34" rx="17"
+      fill="#111827" stroke="#A855F7"/>
+
+    <text x="190" y="397" text-anchor="middle" fill="#D8B4FE">
+      React.js
+    </text>
+
+    <rect x="255" y="375" width="100" height="34" rx="17"
+      fill="#111827" stroke="#22D3EE"/>
+
+    <text x="305" y="397" text-anchor="middle" fill="#67E8F9">
+      Next.js
+    </text>
+
+    <rect x="370" y="375" width="110" height="34" rx="17"
+      fill="#111827" stroke="#EC4899"/>
+
+    <text x="425" y="397" text-anchor="middle" fill="#F9A8D4">
+      TypeScript
+    </text>
+
+    <rect x="495" y="375" width="100" height="34" rx="17"
+      fill="#111827" stroke="#A855F7"/>
+
+    <text x="545" y="397" text-anchor="middle" fill="#D8B4FE">
+      Firebase
+    </text>
+
+    <rect x="610" y="375" width="100" height="34" rx="17"
+      fill="#111827" stroke="#22D3EE"/>
+
+    <text x="660" y="397" text-anchor="middle" fill="#67E8F9">
+      Django
+    </text>
+
+  </g>
+
+  <!-- CODE CARD -->
+
+  <rect
+    x="150"
+    y="435"
+    width="560"
+    height="50"
+    rx="16"
+    fill="#080B16"
+    stroke="#A855F7"
+    stroke-opacity="0.65"/>
+
+  <text
+    x="175"
+    y="467"
+    fill="#A855F7"
+    font-size="15"
+    class="mono">
+
+    const mission =
+
+  </text>
+
+  <text
+    x="340"
+    y="467"
+    fill="#EC4899"
+    font-size="15"
+    class="mono">
+
+    "Code. Learn. Build. Repeat.";
+
+  </text>
+
+  <!-- CODING BOY PLACEHOLDER -->
+
+  <circle
+    cx="1000"
+    cy="300"
+    r="120"
+    fill="#A855F7"
+    opacity="0.15"
+    filter="url(#softGlow)">
+
+    <animate
+      attributeName="opacity"
+      values="0.1;0.3;0.1"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <text
+    x="1000"
+    y="290"
+    text-anchor="middle"
+    fill="#22D3EE"
+    font-size="48"
+    class="mono">
+
+    &lt;/&gt;
+
+  </text>
+
+  <text
+    x="1000"
+    y="335"
+    text-anchor="middle"
+    fill="#CBD5E1"
+    font-size="16"
+    class="mono">
+
+    coding...
+
+    <animate
+      attributeName="opacity"
+      values="0.4;1;0.4"
+      dur="2s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <!-- FOOTER -->
+
+  <text
+    x="600"
+    y="510"
+    text-anchor="middle"
+    fill="#22D3EE"
+    font-size="15"
+    letter-spacing="4"
+    class="sans">
+
+    KEEP CODING • KEEP GROWING
+
+  </text>
+
+  <!-- BORDER -->
+
+  <rect
+    x="5"
+    y="5"
+    width="1190"
+    height="510"
+    rx="28"
+    stroke="#A855F7"
+    stroke-opacity="0.35">
+
+    <animate
+      attributeName="stroke-opacity"
+      values="0.2;0.7;0.2"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+</svg>

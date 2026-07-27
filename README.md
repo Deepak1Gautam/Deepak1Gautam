@@ -98,26 +98,7 @@ A modern animated portfolio showcasing my skills and projects.
 
 ---
 
-## 📊 GitHub Statistics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Deepak1Gautam&show_icons=true&theme=tokyonight&hide_border=true" height="170">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Deepak1Gautam&theme=tokyonight&hide_border=true" height="170">
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak1Gautam&layout=compact&theme=tokyonight&hide_border=true">
-</p>
-
----
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Deepak1Gautam&theme=tokyonight&no-frame=true&margin-w=10">
-</p>
-
----
 
 ## 📈 Contribution Graph
 

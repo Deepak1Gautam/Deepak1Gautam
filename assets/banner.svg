@@ -304,17 +304,18 @@
 <!-- ================= CODING BOY ================= -->
 
 <image
-  href="https://raw.githubusercontent.com/Deepak1Gautam/Deepak1Gautam/main/assets/coding-boy.png"
   x="815"
   y="115"
   width="350"
   height="350"
-  preserveAspectRatio="xMidYMid meet">
+  href="https://raw.githubusercontent.com/Deepak1Gautam/Deepak1Gautam/main/assets/coding-boy.png"
+  preserveAspectRatio="xMidYMid meet"
+  style="display:block">
 
   <animateTransform
     attributeName="transform"
     type="translate"
-    values="0 0;0 -8;0 0"
+    values="0 0; 0 -8; 0 0"
     dur="4s"
     repeatCount="indefinite"/>
 

@@ -304,12 +304,12 @@
 <!-- ================= CODING BOY ================= -->
 
 <image
-  href="https://raw.githubusercontent.com/Deepak1Gautam/Deepak1Gautam/main/assets/coding-boy.png"
+  href="https://github.com/Deepak1Gautam/Deepak1Gautam/raw/refs/heads/main/assets/coding-boy.png"
   x="815"
   y="115"
   width="350"
   height="350"
-  preserveAspectRatio="xMidYMid meet"/>
+  preserveAspectRatio="xMidYMid meet">
 
   <animateTransform
     attributeName="transform"
